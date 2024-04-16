@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: metricsproducer
+server:
+  port: 8081
