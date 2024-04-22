@@ -1,5 +1,22 @@
 spring:
   application:
-    name: metricsproducer
+    name: metricsconsumer
+  datasource:
+    url: jdbc:postgresql://localhost:5433/t1metrics
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: liquibase/changelog.yml
+    enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+  kafka:
+    consumer:
+      bootstrap-servers: "localhost:9092"
+      group-id: "t1-group"
+
 server:
   port: 8081

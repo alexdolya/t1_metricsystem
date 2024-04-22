@@ -4,46 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8629b3f4-8f5a-484f-9feb-879622b20ed4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/MetricsConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/MetricsproducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/test/java/ru/dolya/metricsproducer/MetricsproducerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="8629b3f4-8f5a-484f-9feb-879622b20ed4" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/mapper/MetricMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/model/dto/MetricDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/model/entity/MetricData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/repository/MetricRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/MetricService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/impl/MetricServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/liquibase/changelog.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/controller/MetricController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/Metric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/dto/MetricDataDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/dto/MetricRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/MetricService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/impl/MetricServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/MetricsproducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/MetricsProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-producer/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-producer/src/test/java/ru/dolya/metricsproducer/MetricsproducerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/test/java/ru/dolya/metricsproducer/MetricsProducerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/io/micrometer/micrometer-core/1.12.4/micrometer-core-1.12.4.jar!/io/micrometer/core/instrument/MeterRegistry.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/3.2.4/spring-boot-actuator-3.2.4-sources.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2fBCbiIhfXSkYd7e1qyqerWjSP0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,6 +85,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.MetricsConsumerApplication.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.docker-compose2.yml.db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose2.yml: Compose Deployment.executor": "Run",
+    "Maven.t1_metricsystem [clean,package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -63,21 +96,49 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MetricsConsumerApplication.executor": "Run",
+    "Spring Boot.MetricsProducerApplication.executor": "Run",
     "Spring Boot.MetricsproducerApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/work/java/t1openschool/t1_tracktime",
+    "last_opened_file_path": "D:/work/java/t1openschool/t1_metricsystem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.MetricsproducerApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\java\t1openschool\t1_metricsystem" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-producer" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\java\ru\dolya\metricsconsumer\mapper" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.dolya.metricsconsumer.model" />
+      <recent name="ru.dolya.metricsconsumer.model.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MetricsProducerApplication">
     <configuration name="MetricsConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.dolya.metricsconsumer.MetricsConsumerApplication" />
       <module name="metrics-consumer" />
@@ -98,15 +159,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MetricsproducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="MetricsProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="metrics-producer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.dolya.metricsproducer.MetricsproducerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.dolya.metricsproducer.MetricsProducerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose2.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose2.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose2.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose2.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose2.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose2.yml.db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Application.MetricsConsumerApplication" />
       </list>
     </recent_temporary>
@@ -127,8 +226,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713265159633</updated>
-      <workItem from="1713265160674" duration="1074000" />
+      <workItem from="1713265160674" duration="5746000" />
+      <workItem from="1713273400084" duration="1630000" />
+      <workItem from="1713275868239" duration="131000" />
+      <workItem from="1713419606799" duration="2679000" />
+      <workItem from="1713438396137" duration="3048000" />
+      <workItem from="1713587807187" duration="976000" />
+      <workItem from="1713668674719" duration="8710000" />
+      <workItem from="1713720760989" duration="1107000" />
+      <workItem from="1713760523308" duration="3284000" />
+      <workItem from="1713763906879" duration="3963000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <option name="closed" value="true" />
+      <created>1713266418711</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713266418711</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <option name="closed" value="true" />
+      <created>1713266424740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713266424740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,5 +261,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/KafkaConsumer.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

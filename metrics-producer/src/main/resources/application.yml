@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: metricsproducer
+  kafka:
+    producer:
+      bootstrap-servers: "localhost:9092"
+
+server:
+  port: 8080
+
+kafka:
+  topic:
+    metrics-topic: "metrics-topic"
