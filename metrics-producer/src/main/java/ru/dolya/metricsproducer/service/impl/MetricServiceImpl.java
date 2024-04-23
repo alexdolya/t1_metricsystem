@@ -29,7 +29,7 @@ public class MetricServiceImpl implements MetricService {
     @Value(value = "${kafka.topic.metrics-topic:metrics-topic}")
     private String metricsTopic;
 
-    @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = 180000)
     public void logMetrics(){
         for (Metric metric : Metric.values()) {
             log.info("Отправка метрики {} по расписанию", metric);

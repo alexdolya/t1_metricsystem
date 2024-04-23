@@ -5,38 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8629b3f4-8f5a-484f-9feb-879622b20ed4" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/mapper/MetricMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/model/dto/MetricDataDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/model/entity/MetricData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/repository/MetricRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/MetricService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/impl/MetricServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/liquibase/changelog.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/config/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/controller/MetricController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/Metric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/dto/MetricDataDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/model/dto/MetricRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/MetricService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/impl/MetricServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/controller/ExceptionHandlingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/controller/MetricController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/exception/MetricNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/model/dto/MetricDataResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/openapi/api-docs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics-producer/src/main/resources/openapi/api-docs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6827d309-9160-4e45-bbd5-d17b59eab9b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6827d309-9160-4e45-bbd5-d17b59eab9b9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8baf73a2-ee6f-445b-a4e9-9f525e0a2bc8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8baf73a2-ee6f-445b-a4e9-9f525e0a2bc8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metrics-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/MetricsproducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/MetricsProducerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics-producer/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics-producer/src/test/java/ru/dolya/metricsproducer/MetricsproducerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/test/java/ru/dolya/metricsproducer/MetricsProducerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/mapper/MetricMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/mapper/MetricMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/MetricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/MetricService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/impl/MetricServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-consumer/src/main/java/ru/dolya/metricsconsumer/service/impl/MetricServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/impl/MetricServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/metrics-producer/src/main/java/ru/dolya/metricsproducer/service/impl/MetricServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alexdolya&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alexdolya/t1_metricsystem.git&quot;,
+    &quot;accountId&quot;: &quot;70a8698b-eefe-4c63-84c2-f4c8fb89a845&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/io/micrometer/micrometer-core/1.12.4/micrometer-core-1.12.4.jar!/io/micrometer/core/instrument/MeterRegistry.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/3.2.4/spring-boot-actuator-3.2.4-sources.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.java" root0="SKIP_INSPECTION" />
@@ -102,7 +99,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/work/java/t1openschool/t1_metricsystem",
+    "last_opened_file_path": "D:/work/java/t1openschool/t1_metricsystem/metrics-consumer/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,15 +119,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\resources" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-producer\src\main\resources" />
+      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\java\ru\dolya\metricsconsumer" />
       <recent name="D:\work\java\t1openschool\t1_metricsystem" />
       <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-producer" />
-      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer" />
-      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\java\ru\dolya\metricsconsumer\mapper" />
-      <recent name="D:\work\java\t1openschool\t1_metricsystem\metrics-consumer\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.dolya.metricsconsumer.model" />
+      <recent name="ru.dolya.metricsconsumer.controller" />
       <recent name="ru.dolya.metricsconsumer.model.dto" />
+      <recent name="ru.dolya.metricsconsumer.model" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -203,9 +201,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose2.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose2.yml.db: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Application.MetricsConsumerApplication" />
       </list>
     </recent_temporary>
@@ -235,7 +233,10 @@
       <workItem from="1713668674719" duration="8710000" />
       <workItem from="1713720760989" duration="1107000" />
       <workItem from="1713760523308" duration="3284000" />
-      <workItem from="1713763906879" duration="3963000" />
+      <workItem from="1713763906879" duration="7278000" />
+      <workItem from="1713777756937" duration="118000" />
+      <workItem from="1713801142584" duration="1096000" />
+      <workItem from="1713836164208" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -253,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713266424740</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <option name="closed" value="true" />
+      <created>1713768124721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713768124721</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <option name="closed" value="true" />
+      <created>1713768133575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713768133575</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

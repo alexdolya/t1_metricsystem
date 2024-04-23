@@ -20,7 +20,7 @@ public class MetricController {
     private final MetricService metricService;
 
     @Operation(summary = "Получить данные о метриках")
-    @PostMapping("/requestMetrics")
+    @PostMapping("/metrics")
     public List<MetricDataDto> requestMetrics(@RequestBody List<Metric> requestedMetrics) {
         log.info("Запрос метрик: {}", requestedMetrics);
         return metricService.logMetrics(requestedMetrics);
